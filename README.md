@@ -5,3 +5,5 @@ In this code, a well known dataset,‘cifar10’, with 32x32 square images from 
 
 After which a modified U-net, with additional self-attention layers, was applied to be trained upon these images in consequent time steps. Due to lack of ultra-fast processors the corresponding U-net was trained for only 20 epochs. Finally, when our U-net was trained we employed it to the Annealed Langevin dynamics algorithm to generate some new images, which 10 of them are illustrated below. 
 ![Diff_cifar10_2](https://github.com/ErshadHasanpour/Diffusion-model-for-cifar10-dataset/assets/96794427/c3c4d738-a82b-40b1-9476-300fd41f77f8)
+
+FID score was also computed to evaluate the closeness of generated images and real images. The corresponding FID was 13.67, which is a good and acceptable amount.  
